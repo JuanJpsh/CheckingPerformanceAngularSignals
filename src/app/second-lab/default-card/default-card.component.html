@@ -1,0 +1,7 @@
+<div>
+    <h3>{{ element.name }}</h3>
+    <button [ngClass]="{'selected': element.active}" (click)="onClick()">
+        <span *ngIf="element.active; else deactive">Selected</span>
+        <ng-template #deactive>Select</ng-template>
+    </button>
+</div>

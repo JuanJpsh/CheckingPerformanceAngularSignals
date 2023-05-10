@@ -1,0 +1,8 @@
+.selected{
+    background-color: greenyellow;
+}
+
+div{
+    border: solid 1px;
+    padding: 5px;
+}

@@ -1,0 +1,13 @@
+<button (click)="restart()">Restart</button>
+<div style="background-color: aqua;">
+    <button (click)="elementListTest()">Test</button>
+    <app-on-push-card *ngFor="let element of elementList" [element]="element"/>
+</div>
+<div style="background-color: bisque;">
+    <button (click)="elementList$Test()">Test$</button>
+    <app-on-push-card *ngFor="let element of elementList$ | async" [element]="element"/>
+</div>
+<div style="background-color: greenyellow;">
+    <button (click)="elementListSignalTest()">TestSignal</button>
+    <app-on-push-card *ngFor="let element of elementListSignal()" [element]="element"/>
+</div>
